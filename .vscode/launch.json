@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            //"args": ["-i","input\\GetInventory - l3core.xlsx","-v"]
+            "args": ["-i","input\\GetInventory - ncrlab.xlsx","-v","-l", "C:\\Users\\mp400007\\OneDrive - NCR Corporation\\_2023\\PKOBP\\L3CORE\\Dane\\All"]
+        }
+    ]
+}

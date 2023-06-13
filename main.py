@@ -47,6 +47,8 @@ def main():
     if cli_arg["input_file"]:
         INPUT_FILE_NAME = cli_arg["input_file"]
     VERBOSE = cli_arg["verbose"]
+    if cli_arg["log_file_dir"]:
+        LOG_FILE_DIR= cli_arg["log_file_dir"]
     # Print Starting
     spacer = "\n\n" + gen_spacer("#", 1)
     print(spacer + "\t\tStarting GetInventory Script" + spacer)
@@ -1517,7 +1519,11 @@ def cli_args():
                       action="store",
                       help="Global Secret"
                       )
-
+    parser.add_option('-l', '--log_file_dir',
+                      dest="log_file_dir",
+                      action="store",
+                      help="Global Log File Directory"
+                      )
     options, remainder = parser.parse_args()
     # Utilizing the vars() method we can return the options as a dictionary
     return vars(options)
